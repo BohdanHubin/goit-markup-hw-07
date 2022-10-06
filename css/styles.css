@@ -87,6 +87,7 @@ img {
  /* logo */
 
 .logo {
+    display: inline-block;
     margin-right: 93px;
     font-weight: 700;
     font-size: 26px;
@@ -104,6 +105,12 @@ img {
 .logo__text--inversion {
     color: var(--secondary-title-color) ;
 }
+
+.footer__logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
 
 /* heder */
 
@@ -444,11 +451,7 @@ color: var(--accent-color) ;
     background-color: var(--secondary-background-color) ;
 }
 
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
 
-}
 .footer-list {
     display: inline-block;
     list-style: none;
@@ -460,12 +463,6 @@ color: var(--accent-color) ;
 
 .footer-item:last-child {
     margin-bottom: 0;
-}
-
-.logo.logostudio-footer {
-    margin-right: 0;
-
-    color: var(--secondary-title-color) ;
 }
 
 .addres {
