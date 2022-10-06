@@ -131,21 +131,21 @@ img {
     align-items: center;
 }
 
-.navigation-list {
+.navigation__list {
     display: flex;
     list-style: none;
 }
 
 
-.navigation-item {
+.navigation__item {
     margin-right: 50px;  
 }
 
-.navigation-item:last-child {
+.navigation__item:last-child {
     margin-right: 0;
 }
 
-.navigation-link {
+.navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -158,49 +158,12 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-contact-list {
-    margin-left: auto;
-    display: flex;
-    list-style: none;
-}
-
-.navigation-contact-item:first-child {
-    margin-right: 50px;
-}
-
-.navigation-contact {
-    display: flex;
-    padding: 5px 0;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.navigation-link:hover,
-.navigation-link:focus,
-.navigation-contact:hover,
-.navigation-contact:focus
-{
-color: var(--accent-color) ;
-
-
-}
-
-.navigation-link.current {
+.navigation__link--current {
     position: relative;
     color: var(--accent-color);
 }
 
-.navigation-link.current::after {
+.navigation__link--current::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -213,6 +176,42 @@ color: var(--accent-color) ;
     border-radius: 2px;
 
 }
+
+.contact {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
+.contact__item:first-child {
+    margin-right: 50px;
+}
+
+.contact__link {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.contact__link:hover,
+.contact__link:focus {
+    color: var(--accent-color) ;
+}
+
+
 
 
 
