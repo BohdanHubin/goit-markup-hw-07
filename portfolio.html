@@ -275,52 +275,50 @@
     <footer class="footer">
         <div class="container footer-position">
             <div>
-                <div class="footer-logo">
-                    <a href="./index.html" class="logo logostudio-footer"><span class="logoweb">Web</span>Studio
-                    </a>
-                </div>
+                <a href="./index.html" class="logo footer__logo">Web<span class="logo__text--inversion">Studio</span></a>
                 <address>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="https://goo.gl/maps/nLfdXFzBwr1mePBf7" target="_blank" rel="nofollow" class="addres">м.
+                    <ul class="footer-contact__list">
+                        <li class="footer-contact__item">
+                            <a href="https://goo.gl/maps/nLfdXFzBwr1mePBf7" target="_blank" rel="nofollow"
+                                class="footer-contact__link footer-contact__link--addres">м.
                                 Київ, пр-т
                                 Лесі Українки, 26</a>
                         </li>
-                        <li class="footer-item">
-                            <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+                        <li class="footer-contact__item">
+                            <a href="mailto:info@devstudio.com" class="footer-contact__link">info@devstudio.com</a>
                         </li>
-                        <li class="footer-item">
-                            <a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a>
+                        <li class="footer-contact__item">
+                            <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-sm-block">
-                <p class="list-title footer-sm ">Приєднуйтесь</p>
-                <ul class="footer-sm-list">
+            <div class="sm">
+                <p class="sm__title">Приєднуйтесь</p>
+                <ul class="sm__list sm__list--geometry">
                     <li class="sm-item">
-                        <a class="sm-link footer-link" href="">
+                        <a class="sm__link sm__link--inversion" href="">
                             <svg width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="sm-item">
-                        <a class="sm-link footer-link" href="">
+                        <a class="sm__link sm__link--inversion" href="">
                             <svg width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="sm-item">
-                        <a class="sm-link footer-link" href="">
+                        <a class="sm__link sm__link--inversion" href="">
                             <svg width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="sm-item">
-                        <a class="sm-link footer-link" href="">
+                        <a class="sm__link sm__link--inversion" href="">
                             <svg width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#linkedin"></use>
                             </svg>
@@ -328,20 +326,20 @@
                     </li>
                 </ul>
             </div>
-            <form name="signup_form" autocomplete="off" class="footer-form">
-                <p class="footer-form-title">Підпишіться на розсилку</p>
-                <div class="lable-position">
-                    <label for="">
-                        <input type="email" name="email" placeholder="E-mail" class="footer-input" />
+            <div class="footer-form">
+                <p class="footer-form__title">Підпишіться на розсилку</p>
+                <form name="signup_form" class="form">
+                    <label for="" class="form__lable">
+                        <input type="email" name="email" placeholder="E-mail" class="form__input" />
                     </label>
-                    <button type="submit" class="button footer-form-button">
-                        Підписатися <svg width="24px" height="24px" class="send-icon">
+                    <button type="submit" class="button">
+                        Підписатися <svg width="24px" height="24px" class="button__icon">
                             <use href="./images/symbol-defs.svg#send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
     
-            </form>
+            </div>
     
         </div>
     </footer>
