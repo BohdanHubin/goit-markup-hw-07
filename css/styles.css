@@ -419,11 +419,11 @@ img {
     
 }
 
-.section.worker {
+.section-worker {
     background-color: var(--third-background-color);
 }
 
-.worker-title {
+.section-worker__title {
     margin-top: 30px;    
     margin-bottom: 10px;
 
@@ -434,7 +434,7 @@ img {
     color: var(--title-color);
 }
 
-.worker-item {
+.section-worker__item {
     text-align: center;
 
     background-color: var(--base-backgroud-color);
@@ -443,12 +443,34 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.worker-desc {
+.section-worker__text {
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
+
+.section__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    text-decoration: none;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.section__link:hover,
+.section__link:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+/* socialmedia */
 
 .sm-list {
     list-style: none;
@@ -456,7 +478,7 @@ img {
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
-    
+
 }
 
 
@@ -471,41 +493,14 @@ img {
     fill: var(--icon-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-link:hover,
 .sm-link:focus {
     background-color: var(--accent-color);
     fill: var(--secondary-title-color);
-    
-}
 
-.client-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    text-decoration: none;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    fill: var(--icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-.client-link:hover,
-.client-link:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
 
 /* footer */
