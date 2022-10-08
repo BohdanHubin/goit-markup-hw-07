@@ -152,10 +152,9 @@
      fill: var(--icon-color);
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
          border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);}
  }
 
- .section__link:hover,
- .section__link:focus {
-     fill: var(--accent-color);
-     border: 1px solid var(--accent-color);
- }

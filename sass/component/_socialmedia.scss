@@ -10,32 +10,7 @@
      gap: 10px;
      margin-bottom: 30px;
 
- }
-
- .sm__list--geometry {
-     margin-bottom: 0;
- }
-
-
- .sm__link {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 44px;
-     height: 44px;
-     border-radius: 50%;
-     text-decoration: none;
-     fill: var(--icon-color);
-
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .sm__link:hover,
- .sm__link:focus {
-     background-color: var(--accent-color);
-     fill: var(--secondary-title-color);
-
+    &--geometry {margin-bottom: 0;}
  }
 
  .sm__title {
@@ -48,14 +23,33 @@
      text-transform: uppercase;
      color: var(--base-backgroud-color);
  }
+ 
+ .sm__link {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     text-decoration: none;
+     fill: var(--icon-color);
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--secondary-title-color);}
+ }
 
  .sm__link--inversion {
      background-color: var(--footer-bgc-icon);
      fill: var(--base-backgroud-color);
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--inversion:hover,
+    &--inversion:focus {
+        background-color: var(--accent-color);}
  }
 
- .sm__link--inversion:hover,
- .sm__link--inversion:focus {
-     background-color: var(--accent-color);
- }
+ 
